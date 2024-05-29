@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designwithtahani.dk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Billeder/logo1.png" class="logo">
+            <ul>
+                <li><a href="#header">Hjem</a></li>
+                <li><a href="#about">Om mig</a></li>
+                <li><a href="#projekter">Projekter</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p><span>Multimediedesigner<br>Specialiseret indenfor Grafisk- og UI-Design</span></p>
+            <h1><span>Tahani Al-Hirz</span></h1>
+        </div>
+    </div>
+</div>
+<!------  om mig--> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Billeder/logo2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Om mig</h1>
+                <p>Mit navn er Tahani Al-Hirz og bor i Vejle, men studerer i Odense, Danmark. 
+                Jeg studerer Multimediedesigner og speciliserer mig indenfor Grafisk og UI-Design. 
+                Jeg er meget engageret i at designe uforglemmelige digitale oplevelser samt at gå fra ide til produkt med et særligt touch til hvert enkelt produkt. 
+                I samarbejde med mine kunder, er jeg med til at forbedre brugeroplevelsen. 
+                Derudover har jeg passion for at male, tegne, styrketræne og lave mad. 
+                Tag fat i mig og lad os sammen lave dit eget drømmeprojekt.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Værktøjer')">Værktøjer</p>
+                    <p class="tab-links" onclick="opentab('Uddannelse')">Uddannelse</p>
+                </div>
+                <div class="tab-contents active-tab"  id="Skills">
+                    <ul>
+                        <li><span>UI-Design</span><br>Design af web- og app-grænseflade</li>
+                        <li><span>Web-udvikling</span><br>Web og app udvikling</li>
+                        <li><span>Branding</span><br>Omskab et design om til noget unikt</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Værktøjer">
+                    <ul>
+                        <li><span>2024</span><br>Adope Illustrator 2024</li>
+                        <li><span>2024</span><br>Photoshop</li>
+                        <li><span>2024</span><br>InDesign</li>
+                        <li><span>2024</span><br>Figma</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Uddannelse">
+                    <ul>
+                        <li><span>2020-2023</span><br>Campus Vejle, HHX </li>
+                        <li><span>2024-nu</span><br>Multimediedesigner, Odense UCL Erhvervsakademi og Professionshøjskole</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------mine projekter-->
+<div id="projekter">
+    <div class="container">
+        <h1 class="sub-title">Mine projekter</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Billeder/produkt1.png">
+                <div class="layer">
+                    <h2>Logo for Tone of Voice</h2>
+                    <p>Dette er et ord, der frembringer budskabet og trænger igennem modtagerne
+                    med den rette Tone of Voice.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Billeder/projekt2.png">
+                <div class="layer">
+                    <h2>News App</h2>
+                    <p>Denne nyhedsapp er udviklet med fokus på den enkelte brugers behov, 
+                    hvilket gør hverdags nyheder mere attraktive.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Billeder/projekt3.png">
+                <div class="layer">
+                    <h2>Illustration</h2>
+                    <p>Dette er blot endnu et af mine værk fra Adope Illustrator.
+                    Et billedeportræt af mig selv lavet ved hjælp af pentoll.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Billeder/projekt4.png">
+                <div class="layer">
+                    <h2>Sprite Animation</h2>
+                    <p>Et lille projekt af Sprite Animation.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Billeder/projekt5.png">
+                <div class="layer">
+                    <h2>Movingarts</h2>
+                    <p>Bringe et maleri til live af Frida Kahlo ved brug af Premiere pro og Photoshop.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Billeder/projekt6.png">
+                <div class="layer">
+                    <h2>Logo</h2>
+                    <p>Mit selvdesignet logo af hjemmesiden ved brug af Adope Illustrator og CSS Animation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------kontakt-->
+<div class="kontakt-container">
+<div id="kontakt">
+    <div class="container">
+        <div class="row">
+            <div class="kontakt-left">
+                <h1 class="sub-title">Kontakt mig</h1>
+                <p>E-mail: tahani1nabiltahani@outlook.dk</p>
+                <p>Telefonnummer: +45 31 86 59 92</p>
+            </div>
+            <div class="kontakt-right">
+                <form>
+                    <input type="Tekst" name="Navn" placeholder="Dit navn" required>
+                    <input type="email" name="E-mail" placeholder="Din E-mail" required>
+                    <textarea name="Besked" rows="6" placeholder="Din besked"></textarea>
+                    <button type="submit" class="btn btn2">Indsend</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer>
+    <div class="copyright">
+        <p>© 2024 - Tahani Al-Hirz </p>
+    </div>
+</footer>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
