@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!----betyder indkluderer alle sprog og tegnesætning--->
+    <meta http-equiv="x-ua-compatible" content="ie-edge"> <!--------beder om at vise den nye version, så den ikke falder tilbage--->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!------sikrer sig den passer alle skærmstørrelser samt enheder. 
+        viewport: lige med bredden på enheden (devide-width) og zoom skala skal være 1.0, så den ikke går ind eller ud ved indlæsning--->
     <title>Designwithtahani.dk</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="header">
     <div class="container">
-        <nav>
+        <nav> <!-------definerer navigation på hjemmeside for menuen-->
             <img src="Billeder/logo1.png" class="logo">
-            <ul>
-                <li><a href="#header">Hjem</a></li>
+            <ul> <!----uordnet liste til at lave menuen--->
+                <li><a href="#header">Hjem</a></li> <!----#header osv er for min scrool behavoir når man klikker på hvert punkt-->
                 <li><a href="#about">Om mig</a></li>
                 <li><a href="#projekter">Projekter</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
@@ -26,8 +27,8 @@
     </div>
 </div>
 <!------  om mig--> 
-<div id="about">
-    <div class="container">
+<div id="about"> <!----Id hjælper til at linke til et andet sted på hjemmesiden. I dette tilfælde er det om mig--->
+    <div class="container"> <!---for at centrerer indholdet, tilgøje passende margin og begrænse bredden for indholdet så layoutet bliver mere struktureret og pænt ---->
         <div class="row">
             <div class="about-col-1">
                 <img src="Billeder/logo2.png">
@@ -41,14 +42,16 @@
                 Derudover har jeg passion for at male, tegne, styrketræne og lave mad. 
                 Tag fat i mig og lad os sammen lave dit eget drømmeprojekt.</p>
 
-                <div class="tab-title">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Værktøjer')">Værktøjer</p>
-                    <p class="tab-links" onclick="opentab('Uddannelse')">Uddannelse</p>
+                <div class="tab-title"> <!---container for alle fanerne, så brugeren kan klikke fra hver indholdspaneler--->
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p> <!--bruges til at style fanerne og aktiv link definerer den aktiv fane som den første.
+                        opentab skills er her jeg kalder på javascript når fanen klikkes på. opentab skifter til indholdspanelet--->
+                    <p class="tab-links" onclick="opentab('Værktøjer')">Værktøjer</p> <!---det samme gælder her dog uden aktiv link. opentab skifter til indholdspanel. værktøjer er der teksten vises-->
+                    <p class="tab-links" onclick="opentab('Uddannelse')">Uddannelse</p> <!--samme overfor. uddannelse er her teksten vises--->
                 </div>
-                <div class="tab-contents active-tab"  id="Skills">
-                    <ul>
-                        <li><span>UI-Design</span><br>Design af web- og app-grænseflade</li>
+                <div class="tab-contents active-tab"  id="Skills"> <!---tab contents for at style indholdet af fanerne. aktiv tab gør den synlig som den første. 
+                    id skills burges af javascript til at vise det korrekte indhold, når der vælges en fane--->
+                    <ul> <!---uordnet liste med indholdet af elementerne i denne fane-->
+                        <li><span>UI-Design</span><br>Design af web- og app-grænseflade</li> <!----li er listeelement, som indbærer et emne. span ui design er tekst som fremhæves ved hjælp af span. design web og app grænse beskriber selve emnet--->
                         <li><span>Web-udvikling</span><br>Web og app udvikling</li>
                         <li><span>Branding</span><br>Omskab et design om til noget unikt</li>
                     </ul>
@@ -153,7 +156,13 @@
 </footer>
 
 
-
+<!----denne javascript hhjælper med funktionerne af fanenavigationen på min hjemmeside.-->
+<!---tablinks er en samling af alle mine elementer med klassen tab-links, som gør mine brugere kan klikke på (om mig)--->
+<!--tabcontents det er hvor indholdet vises når min fane er aktiv--->
+<!---tablink of tablinks det sikre at ingen faner er aktive før den nye fane sættes og er aktiv--->
+<!----tabcontent of tabcontents det her skjuler alle faneindhold--->
+<!---tilføjer et aktivt link til når deres klikkes på en fane-->
+<!---aktiv tab bliver tilføjet til det faneindhold, som svarer til den klikkede fane, som gør indholdet synligt.--->
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
@@ -171,6 +180,8 @@
     }
 
 </script>
-
+<!--overordnet gør denne javascript det mere dynamisk og brugervenligt, 
+    når der bliver klikket på en fane så deaktiveres alle andre faner, 
+    og aktiviere kun den valgte fane og dens tilhørende indhold.--->
 </body>
 </html>

@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* så man får en glidende gang når man trykker på de forskellige faner og den ruller den til siden */
 }
 body{
     background: #B8AFA1;
@@ -262,10 +262,11 @@ form .btn2{ /* giver den rette form og styling for min knap */
     font-weight: 300;
 }
 
-.kontakt-container h1, .kontakt-container p{
+.kontakt-container h1, .kontakt-container p{ /* farve til teksten af email og tlf */
     color: #B8AFA1;
 }
 
+/* skærm til computer */
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(Billeder/profil.png);
